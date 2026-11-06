@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Learn More</h1>
+
+<ul>
+    <p><li>In your repository, create a folder named web-content. The files that follow must exist in this folder.
+
+Bring or create a website with:
+
+a minimum of two html files (index and one other)
+a minimum of one css file
+You may use generative AI to create you a site per a theme, but you must cite which generative AI system you used and the prompt you fed to it.
+
+Create a Dockerfile with the following two instructions:
+
+Build from httpd:2.4
+Copy all content in web-content into the container filesystem in the default web content directory for httpd
+Build and tag a container image using your Dockerfile as the build instructions
+
+Login to DockerHub on the command line. Use a Personal Access Token (PAT) instead of a password.
+
+Push your container image to a public DockerHub repository in your account.
+
+Recommended: pull your container image and run it to test that it serves your web content. </li></p>
+
+   <p> <li>Create an appropriately scoped Personal Access Token for GitHub Actions to use to access your DockerHub repository
+
+In your GitHub repository, configure GitHub Action Secrets named DOCKER_USERNAME and DOCKER_TOKEN containing your DockerHub username & DockerHub access token, respectively.
+
+Set up a GitHub Actions workflow to build and push container images to your DockerHub repository
+
+workflow shall trigger when a commit is pushed to the main branch (and only the main branch)
+workflow shall utilize repository secrets for authentication
+workflow shall utilize actions as opposed to run commands
+actions used should verified by GitHub as an official partner organization and should utilize the most up to date action version </li></p>
+
+<p><li> Create git tags for your commits using semantic versioning best practices
+Modify the GitHub Action workflow in your GitHub repository to:
+trigger when a tag is push to the repository - no other triggers should be in your final version
+use the docker/metadata-action to generate a set of tags from your repository
+utilize repository secrets for login authentication to DockerHub
+build and push container images to DockerHub with image tags based on your tag version AND latest
+DockerHub shall receive the following tags to the container image repository:
+
+latest (ex. wsukduncan/s25cats:latest)
+major (ex. wsukduncan/s25cats:3)
+major.minor (ex. wsukduncan/s25cats:3.8)</li></p>
+
+<li>Create a diagram (or diagrams) of the continuous integration process configured in this project. It should (at minimum) address how the developer changing code results in a new image available in a DockerHub container image repository - again, according to the workflow that this project enables.</li>
+</ul>
+
+    <a href="index.html">Go back to Homepage</a>
