@@ -38,3 +38,5 @@ Part 3 - Semantic Versioning Documentation
 
 
 Part 4 - Project Description & Diagram Documentation
+
+Testing branch trigger behavior.
