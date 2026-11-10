@@ -142,7 +142,7 @@ Part 4 - Project Description & Diagram Documentation
 
 Local run - docker ps showing your container running, and a browser showing both of your pages with your CSS applied.
 
-
+![Project 6 CI/CD Diagram](Project%206%20images/Project%206%20Diagram.png)
 
 ![Docker container running](Project%206%20images/docker-container-running.png)
 
@@ -215,7 +215,8 @@ Rollback - run containers from your major.minor tags (for example, :1.0 and :1.1
 
 ![Version 1.1](Project%206%20images/rollback-v1.1.png)
 
-
+Resources - https://www.w3schools.com/
+and coploit 
 
 
 
